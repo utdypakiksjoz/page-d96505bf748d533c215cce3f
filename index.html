@@ -1,0 +1,625 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>奶瓶(Nerwo) - 陪伴你的网络连接方案与使用指南</title><meta name="description" content="奶瓶(Nerwo) 像老朋友一样陪你整理日常网络配置，清晰梳理服务规格、通用客户端设置与常见疑惑，让每一次连接都踏实顺畅。"><meta name="keywords" content="奶瓶, Nerwo, 网络连接, 规则配置, 订阅指南, 客户端设置"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-acb617e3bb.u4847x.cn/"><meta property="og:type" content="website"><meta property="og:title" content="奶瓶(Nerwo) - 陪伴你的网络连接方案与使用指南"><meta property="og:description" content="奶瓶(Nerwo) 像老朋友一样陪你整理日常网络配置，清晰梳理服务规格、通用客户端设置与常见疑惑，让每一次连接都踏实顺畅。"><meta property="og:url" content="https://p-acb617e3bb.u4847x.cn/"><meta property="og:site_name" content="奶瓶(Nerwo)"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-acb617e3bb.u4847x.cn/", "name": "奶瓶(Nerwo) - 陪伴你的网络连接方案与使用指南", "description": "奶瓶(Nerwo) 像老朋友一样陪你整理日常网络配置，清晰梳理服务规格、通用客户端设置与常见疑惑，让每一次连接都踏实顺畅。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="d96505bf748d533c215cce3f:823b7652370f6b219e7907e9f297545938c15d8c20bcc83d9bb61820a009d9dd:c52c55d33ab5d49a3c40"></head><body id="top"><style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #ffffff;
+      color: #121212;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .layout-frame {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      background-color: #ffffff;
+      border-right: 3px solid #121212;
+      padding: 32px 24px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .brand-mark {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      padding-bottom: 24px;
+      border-bottom: 3px solid #ff5500;
+      color: #121212;
+    }
+    .brand-mark span {
+      color: #ff5500;
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .side-nav ul {
+      list-style: none;
+      margin-top: 32px;
+    }
+    .side-nav li {
+      margin-bottom: 16px;
+    }
+    .side-nav a {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 8px 12px;
+      border: 2px solid transparent;
+      color: #121212;
+      transition: all 0.15s ease;
+    }
+    .side-nav a:hover {
+      border-color: #121212;
+      background-color: #ff5500;
+      color: #ffffff;
+    }
+    .side-note {
+      font-size: 12px;
+      line-height: 1.5;
+      padding: 12px;
+      border: 2px solid #121212;
+      background-color: #fff9f5;
+    }
+
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      padding: 48px 64px 96px;
+    }
+
+    .hero-timeline {
+      margin-bottom: 80px;
+      padding-bottom: 56px;
+      border-bottom: 3px solid #121212;
+    }
+    .hero-tag {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      background-color: #ff5500;
+      color: #ffffff;
+      padding: 4px 10px;
+      margin-bottom: 16px;
+    }
+    .hero-timeline h1 {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: #121212;
+    }
+    .hero-intro {
+      font-size: 17px;
+      color: #333333;
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+
+    .timeline-stream {
+      position: relative;
+      padding-left: 36px;
+      border-left: 3px solid #121212;
+      margin-top: 32px;
+      max-width: 760px;
+    }
+    .timeline-node {
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .timeline-node:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: -44px;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      background-color: #ffffff;
+      border: 3px solid #ff5500;
+    }
+    .timeline-time {
+      font-size: 13px;
+      font-weight: 800;
+      color: #ff5500;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .timeline-node h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #121212;
+    }
+    .timeline-node p {
+      font-size: 15px;
+      color: #444444;
+      line-height: 1.6;
+    }
+
+    .content-section {
+      margin-bottom: 72px;
+    }
+    .section-header {
+      margin-bottom: 28px;
+    }
+    .section-header h2 {
+      font-size: 26px;
+      font-weight: 900;
+      color: #121212;
+      border-left: 8px solid #ff5500;
+      padding-left: 14px;
+      line-height: 1.2;
+    }
+    .section-header p {
+      font-size: 15px;
+      color: #555555;
+      margin-top: 8px;
+    }
+
+    .guide-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .guide-card {
+      border: 3px solid #121212;
+      padding: 24px 20px;
+      background-color: #ffffff;
+      box-shadow: 4px 4px 0 #121212;
+    }
+    .step-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 900;
+      color: #ffffff;
+      background-color: #121212;
+      padding: 2px 8px;
+      margin-bottom: 12px;
+    }
+    .guide-card h3 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .guide-card p {
+      font-size: 14px;
+      color: #444444;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      border: 3px solid #121212;
+      box-shadow: 6px 6px 0 #121212;
+      background-color: #ffffff;
+    }
+    .plans-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+    .plans-table th,
+    .plans-table td {
+      padding: 18px 20px;
+      border-bottom: 2px solid #121212;
+      border-right: 2px solid #121212;
+      vertical-align: top;
+    }
+    .plans-table th:last-child,
+    .plans-table td:last-child {
+      border-right: none;
+    }
+    .plans-table tr:last-child td {
+      border-bottom: none;
+    }
+    .plans-table thead th {
+      background-color: #121212;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .plans-table thead th.featured-col {
+      background-color: #ff5500;
+      color: #ffffff;
+    }
+    .plan-price-num {
+      font-size: 24px;
+      font-weight: 900;
+      display: block;
+      color: #121212;
+      margin-bottom: 4px;
+    }
+    .plan-annual-sub {
+      font-size: 12px;
+      color: #ff5500;
+      font-weight: 700;
+    }
+    .feature-tag-list {
+      list-style: none;
+    }
+    .feature-tag-list li {
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: #333333;
+      padding-left: 14px;
+      position: relative;
+    }
+    .feature-tag-list li::before {
+      content: "▪";
+      position: absolute;
+      left: 0;
+      color: #ff5500;
+      font-size: 12px;
+    }
+    .table-action-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #121212;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      border: 2px solid #121212;
+    }
+    .table-action-btn.orange {
+      background-color: #ff5500;
+      border-color: #ff5500;
+    }
+    .table-action-btn:hover {
+      background-color: #ffffff;
+      color: #121212;
+    }
+
+    .client-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .client-card {
+      border: 3px solid #121212;
+      padding: 24px;
+      background-color: #ffffff;
+      position: relative;
+    }
+    .client-card h3 {
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .client-card p {
+      font-size: 14px;
+      color: #444444;
+      margin-bottom: 16px;
+    }
+    .client-status {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 8px;
+      background-color: #f2f2f2;
+      display: inline-block;
+      border: 1px solid #121212;
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .faq-item {
+      border: 3px solid #121212;
+      padding: 24px;
+      background-color: #ffffff;
+      box-shadow: 4px 4px 0 #121212;
+    }
+    .faq-item h3 {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #121212;
+      line-height: 1.4;
+    }
+    .faq-item p {
+      font-size: 14px;
+      color: #444444;
+      line-height: 1.6;
+    }
+
+    .page-footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 3px solid #121212;
+      font-size: 13px;
+      color: #666666;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-warning {
+      color: #888888;
+      font-size: 12px;
+    }
+
+    @media (max-width: 960px) {
+      .layout-frame {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 3px solid #121212;
+        padding: 20px 24px;
+      }
+      .side-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .side-nav li {
+        margin-bottom: 0;
+      }
+      .side-note {
+        display: none;
+      }
+      .main-content {
+        padding: 32px 20px 64px;
+      }
+      .hero-timeline h1 {
+        font-size: 32px;
+      }
+      .guide-cards,
+      .client-grid,
+      .faq-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style><div class="layout-frame">
+    <aside class="sidebar">
+      <div>
+        <div class="brand-mark">
+          奶瓶 (Nerwo)
+          <span>Connection Guide</span>
+        </div>
+        <nav class="side-nav">
+          <ul>
+            <li><a href="#story">初识奶瓶</a></li>
+            <li><a href="#how-it-works">上手指南</a></li>
+            <li><a href="#plans">方案列表</a></li>
+            <li><a href="#software">工具与支持</a></li>
+            <li><a href="#faq">常见问答</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="side-note">
+        <strong>朋友式碎碎念：</strong>
+        配置网络不用急，一杯温水的功夫，照着顺序看，有问题随时来翻翻。
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section id="story" class="hero-timeline">
+        <span class="hero-tag">你好，欢迎来到这里</span>
+        <h1>奶瓶(Nerwo)：陪你把网络环境打理得井井有条</h1>
+        <p class="hero-intro">
+          很多时候我们需要的不是一堆花哨的技术词汇，而是一份坦诚、省心且可靠的连接指引。奶瓶(Nerwo) 记录着从配置新手到从容应对日常工作与娱乐的每一步。
+        </p>
+
+        <div class="timeline-stream">
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">Step 01 · 需求认清</div>
+            <h3>从“打不开网页”到找对思路</h3>
+            <p>别为了庞大的概念头疼，日常查阅资料、看技术文档、欣赏流媒体影音，需要的只是合理的路由分流与清爽的节点规则。</p>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">Step 02 · 规则梳理</div>
+            <h3>订阅链接与配置文件的磨合</h3>
+            <p>在客户端里导入订阅，让国内直连、海外走合理链路，不给本地网络添堵，也不占用多余的带宽资源。</p>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">Step 03 · 长期安稳</div>
+            <h3>平稳陪伴你的每一天</h3>
+            <p>不管是手提电脑赶工、手机端看剧，还是团队协同查验资源，奶瓶(Nerwo) 都在这儿，提供清楚明白的参考和规则支持。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="content-section">
+        <div class="section-header">
+          <h2>使用说明：三步搞定常规配置</h2>
+          <p>像老朋友给你列的便签条一样，跟着走就行，不绕弯子。</p>
+        </div>
+        <div class="guide-cards">
+          <article class="guide-card">
+            <span class="step-badge">第一步</span>
+            <h3>选好适合你的规格</h3>
+            <p>看看自己平时用多少流量、同时有几个设备在手边。轻度查资料选基础规格，多设备或影音需求选旗舰配置，按需决定最实在。</p>
+          </article>
+          <article class="guide-card">
+            <span class="step-badge">第二步</span>
+            <h3>导入订阅到客户端</h3>
+            <p>在对应系统的主流开源工具里新建配置，复制你的专用订阅链接并拉取节点列表，确认延迟检测正常即可。</p>
+          </article>
+          <article class="guide-card">
+            <span class="step-badge">第三步</span>
+            <h3>开启规则分流模式</h3>
+            <p>推荐选择“规则（Rule）”或“绕过大陆”模式，这样本地应用、微信与网银依然走国内直连，互不打扰。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="plans" class="content-section">
+        <div class="section-header">
+          <h2>方案规格横向一览</h2>
+          <p>我们把参考规格与特性摆在一张表里，各项权责一目了然。</p>
+        </div>
+        <div class="table-container">
+          <table class="plans-table">
+            <thead>
+              <tr>
+                <th>方案名称</th>
+                <th>基础版</th>
+                <th class="featured-col">旗舰版（大家常选）</th>
+                <th>团队版</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>资费标准</strong></td>
+                <td>
+                  <span class="plan-price-num">¥15/月</span>
+                  <span class="plan-annual-sub">按年付仅需 ¥150/年</span>
+                </td>
+                <td>
+                  <span class="plan-price-num">¥35/月</span>
+                  <span class="plan-annual-sub">按年付仅需 ¥350/年</span>
+                </td>
+                <td>
+                  <span class="plan-price-num">¥85/月</span>
+                  <span class="plan-annual-sub">按年付仅需 ¥850/年</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>每月流量</strong></td>
+                <td>100GB 基础流量额度</td>
+                <td>300GB 充裕流量额度</td>
+                <td>1000GB 大容量流量池</td>
+              </tr>
+              <tr>
+                <td><strong>同时在线设备</strong></td>
+                <td>支持 3 台设备</td>
+                <td>支持 5 台设备</td>
+                <td>支持 20 台设备协同</td>
+              </tr>
+              <tr>
+                <td><strong>线路与特性</strong></td>
+                <td>
+                  <ul class="feature-tag-list">
+                    <li>普通线路节点池</li>
+                    <li>解锁基础流媒体服务</li>
+                    <li>常规工单答疑</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="feature-tag-list">
+                    <li>全节点原生流媒体解锁</li>
+                    <li>IPLC 专线游戏加速优化</li>
+                    <li>7x24 优先工单响应</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="feature-tag-list">
+                    <li>VIP 专属高带宽节点</li>
+                    <li>支持企业定制路由</li>
+                    <li>专属客户经理沟通服务</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>推荐场景</strong></td>
+                <td>日常查阅文档、个人轻量访问</td>
+                <td>高画质影音观赏、网络游戏与常态办公</td>
+                <td>小型工作室、多成员协作研发环境</td>
+              </tr>
+              <tr>
+                <td><strong>获取方式</strong></td>
+                <td><a href="#" class="table-action-btn">查看详情</a></td>
+                <td><a href="#" class="table-action-btn orange">选择旗舰版</a></td>
+                <td><a href="#" class="table-action-btn">咨询团队支持</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="software" class="content-section">
+        <div class="section-header">
+          <h2>通用客户端配合说明</h2>
+          <p>奶瓶(Nerwo) 采用标准的通用协议标准，支持各大开放平台的主流客户端，请至其官方开源仓库获取正规软件。</p>
+        </div>
+        <div class="client-grid">
+          <article class="client-card">
+            <h3>Windows 环境</h3>
+            <p>支持 Clash Verge、Sing-box 或 v2rayN 等通用工具。解压后将订阅地址写入配置管理器，勾选系统代理即可。</p>
+            <span class="client-status">建议在开源仓库下载安装包</span>
+          </article>
+          <article class="client-card">
+            <h3>macOS / iOS 环境</h3>
+            <p>苹果生态推荐使用 Surge、Loon、Shadowrocket 或 Clash Verge Rev。支持托管配置自动更新，维护省心。</p>
+            <span class="client-status">通过 App Store 或 GitHub 获取</span>
+          </article>
+          <article class="client-card">
+            <h3>Android 环境</h3>
+            <p>安卓平台可选用 Clash Meta for Android、Surfboard 或 v2rayNG。配置导入后授予 VPN 权限即可安心使用。</p>
+            <span class="client-status">建议核对包名签名真伪</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="content-section">
+        <div class="section-header">
+          <h2>常见问答与答疑</h2>
+          <p>把平日里大家最常问到的细节整理在这里，随时查看。</p>
+        </div>
+        <div class="faq-layout">
+          <article class="faq-item">
+            <h3>Q1: 刚拿到订阅链接，客户端提示“更新失败”怎么办？</h3>
+            <p>先别慌，这通常是本地网络解析链接域名偶尔出现小波动。可以先检查系统时间是否准确（时间偏差超过一分钟会影响校验），或者尝试切换客户端里的 User-Agent 标识重试一次。</p>
+          </article>
+          <article class="faq-item">
+            <h3>Q2: 基础版同时在线 3 台设备，如果超出了会怎么样？</h3>
+            <p>设备数指的是同时发起网络连接的终端数量。如果超过了该规格的并发上限，后发起连接的设备可能会遇到握手超时或短暂排队。若是全家或团队共用，建议直接考虑旗舰版或团队版。</p>
+          </article>
+          <article class="faq-item">
+            <h3>Q3: 为什么看某些网站依然跳转到国内版本？</h3>
+            <p>这通常与分流规则的分组有关。请检查你的客户端路由策略是否为“规则模式（Rule）”。如果目标网址在直连列表内，流量便不会走代理节点；若有特别需求，可以在配置里手动添加自定义规则后缀。</p>
+          </article>
+          <article class="faq-item">
+            <h3>Q4: 年付与月付在功能支持上有区别吗？</h3>
+            <p>功能特性与节点权限完全一致，年付主要是给愿意长期使用的朋友提供性价比更优的资费结算方式。你可以先用月付试水，觉得节奏舒服了再转为年付。</p>
+          </article>
+          <article class="faq-item">
+            <h3>Q5: 遇到游戏延迟波动时，该优先选哪个节点？</h3>
+            <p>建议优先选择带有 IPLC 或专线标识的邻近区域节点（例如香港、日本等物理距离较近的线路），并在客户端启用 UDP 转发支持，这样能获得更平稳的游戏交互响应。</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <div>
+          © 奶瓶(Nerwo) 指南整理与服务参考 · 保持纯粹与坦诚
+        </div>
+        <div class="footer-warning">
+          请合理合法使用网络连接资源，遵守所在地区相关法律法规与互联网服务准则。
+        </div>
+      </footer>
+    </main>
+  </div><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
